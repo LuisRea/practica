@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+    <title>Posicion</title>
+    <LINK REL=StyleSheet HREF="posicion.css" TYPE="text/css" MEDIA=screen>
+</head>
+<body>
+<header>
+	<h1>Positions 2</h1>
+	<h2>Trabajando las posiciones en CSS</h2>
+</header>
+<nav>
+	<ul>
+		<li><a href="#static">Static</a></li>
+		<li><a href="#relative">Relative</a></li>
+		<li><a href="#fixed">Fixed</a></li>
+		<li><a href="#absolute">Absolute</a></li>
+	</ul>
+</nav>	
+<section id="static">
+	<h2>position: static;</h2>
+	<ul>
+		<li>Propiedad por defecto</li>
+		<li>Decimos que no tiene posición ya que No se puede posicionar</li>
+	</ul>
+</section>
+<section id="relative">
+	<h2>position: relative;</h2>
+	<ul>
+		<li>Se pueden usar las propiedades left, right, bottom, top y z-index</li>
+		<li>El elemento se posiciona a partir de su posición inicial</li>
+		<li>El elemento se mueve pero nadie ocupa su lugar</li>
+	</ul>
+	<div class="cuadrado"></div>
+	<div class="circulo"></div>
+</section>
+<section id="fixed">
+	<h2>position: fixed;</h2>
+	<ul>
+		<li>Se pueden usar las propiedades left, right, bottom, top y z-index</li>
+		<li>El elemento se posiciona con respecto al body</li>
+		<li>Al moverlo otros elementos ocupan su lugar</li>
+		<li>Aunque hagamos scroll se queda fijo</li>
+	</ul>
+	<div class="rectangulo"></div>
+</section>
+<section id="absolute">
+	<h2>position: absolute;</h2>
+	<ul>
+		<li>Se pueden usar las propiedades left, right, bottom, top y z-index</li>
+		<li>El elemento se posiciona con respecto a un ancestro (padre, abuelo...) con posición</li>
+		<li>Al moverlo otros elementos ocupan su lugar</li>
+		<li>Al hacer scroll el elemento se muevo como los demás elementos</li>
+	</ul>
+	<div class="balon">&#9917;</div>
+</section>
+
+
+</body>
+</html>

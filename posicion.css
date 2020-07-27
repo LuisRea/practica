@@ -1,0 +1,57 @@
+
+		h1 {
+			color: red;
+		}
+/*Position Static */
+		#static {
+            background-color: aquamarine;
+            position: sticky;/*se usa pas menus*/
+            top: 200px;
+   
+		}
+/*Position relative */
+		#relative {
+			
+		}
+		.cuadrado {
+			width: 50px;
+			height: 50px;
+            background-color: blue;
+            z-index: 1;
+			
+		}
+		.circulo {
+			background-color: red;
+			width: 50px;
+			height: 50px;
+            border-radius: 50%;
+            position: relative;
+            left: 20px;
+            top: -20px;
+            z-index: 2;/*posicion delante atras*/
+		}
+/*Position fixed*/
+		#fixed {
+			background-color: paleturquoise;
+		}
+		.rectangulo {
+			width: 100px;
+			height: 30px;
+            background-color: orange;
+            position: fixed;
+            top: 0px;
+            left: 50px;
+            z-index: -1;
+		}
+/*Position absolute*/
+		#absolute {
+			background-color: green;
+            color: white;
+            position: relative;
+		}
+		.balon {
+            font-size: 30px; 
+            position: absolute;
+            bottom: 0px;
+            right: 50%;
+		}
